@@ -1,4 +1,6 @@
 - hosts: all
   tasks:
-    - name: Dump all databases
-      mysql_db: state=import name=all target=/tmp/all.sql
+    - name: debug var
+      debub: var=test
+    # - name: Dump all databases
+    #   mysql_db: state=import name=all target=/tmp/all.sql
