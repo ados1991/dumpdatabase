@@ -2,5 +2,6 @@
   tasks:
     - name: debug var
       debug: var=test
-    # - name: Dump all databases
-    #   mysql_db: state=import name=all target=/tmp/all.sql
+    - name: Dump all databases
+      mysql_db: state=import name=all target=/tmp/all.sql login_user={{_login_user}} login_password={{_login_password}}
+
