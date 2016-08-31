@@ -1,0 +1,1 @@
+- {mysql_db: 'state=import name=all target=/tmp/all.sql'}
