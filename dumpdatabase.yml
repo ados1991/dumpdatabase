@@ -2,5 +2,5 @@
   tasks:
     - name: "Dump database {{_database}}"
       mysql_db: state=import name={{_database}} target="/tmp/{{_database}}.sql" login_user={{_login_user}} login_password={{_login_password}}
-      when: not((_login_password is undefined) or _login_password is none) or (_login_password | trim == '')) and not((_login_user is undefined) or _login_user is none) or (_login_user | trim == '')) and not((_login_password is undefined) or _login_password is none) or (_login_password | trim == ''))
+      when: not((_database is undefined) or _database is none) or (_database | trim == '')) and not((_login_user is undefined) or _login_user is none) or (_login_user | trim == '')) and not((_login_password is undefined) or _login_password is none) or (_login_password | trim == ''))
 
